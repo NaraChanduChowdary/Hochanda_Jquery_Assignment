@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+</head>
+<body>
+    <table id="example">
+        <thead>
+            <tr class="staticdata">
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Account </th>
+                <th>value</th>
+                <th>Created</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <script>
+
+        $("#example").dataTable({
+
+            "data": [
+                ["1", "Bob", "ACC123", "500", "2017-01-11"],
+                ["2", "Alice", "BBB321", "300", "2017-03-05"],
+                ["3", "Jim", "BAA456", "20.5", "2017-02-12"],
+                ["4", "Liz", "BBB654", "1000", "2017-04-30"],
+            ].filter(function (i, n) {
+                return i[2].startsWith('B');
+            }),
+
+            "createdRow": function (row, data, dataIndex) {
+                if (data[3] < 100) {
+                    $(row.children[3]).css("background-color", "red");
+                }
+                else if (data[3] > 500) {
+                    $(row.children[3]).css("background-color", "green");
+                }
+
+                $(row.children[4]).text(new Date(data[4]).toDateString());
+                $(row.children[3]).text(parseFloat(data[3]).toFixed(2));
+            }
+        });
+
+        var table = $('#example').DataTable();
+        table
+            .column('2:visible')
+            .order('asc')
+            .draw();
+
+    </script>
+</body>
+</html>

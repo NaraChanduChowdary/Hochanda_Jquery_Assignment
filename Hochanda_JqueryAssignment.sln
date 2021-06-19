@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hochanda_JqueryAssignment", "Hochanda_JqueryAssignment\Hochanda_JqueryAssignment.csproj", "{6D3F79D6-89C7-4E69-AD71-C6D3CA9F4BF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D3F79D6-89C7-4E69-AD71-C6D3CA9F4BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3F79D6-89C7-4E69-AD71-C6D3CA9F4BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3F79D6-89C7-4E69-AD71-C6D3CA9F4BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3F79D6-89C7-4E69-AD71-C6D3CA9F4BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {693FCF05-EEF7-4546-857E-19CFDB2D0E1D}
+	EndGlobalSection
+EndGlobal
